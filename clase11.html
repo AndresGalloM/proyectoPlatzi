@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Platzi Yard Sale/image/favicon_bota_fora.svg" type="img">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #919191;
+            --text-input-field: #eeeeee;
+            --hospital-green: #94cf9c;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .navbar{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            padding: 20px 30px;
+            box-shadow: 0px 0pc 10px rgb(200, 200, 200);
+        }
+
+        ul{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        li{
+            display: inline;
+        }
+
+        .icono-menu{
+            display: none;
+        }
+
+        .navbar-left{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .navbar-left .logo{
+            width: 120px;
+        }
+
+        .navbar-left ul li a{
+            text-decoration: none;
+            font-size: var(--md);
+            color: var(--very-light-pink);
+            margin-right: 10px;
+        }
+
+        .navbar-left ul li:last-child a{
+            margin-right: 0px;   
+        }
+
+        .navbar-right{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navbar-right .email{
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar-right .email li{
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+
+        .navbar-right .email img{
+            transform: rotate(90deg);
+            font-size: var(--sm);
+        }
+
+        @media (max-width: 890px){
+            .icono-menu{
+                display: block;
+            }
+
+            .menu{
+                display: none;
+            }
+
+            .navbar-left, .navbar-right{
+                gap: 0px;
+            }
+
+            .navbar-right .email{
+                display: none;
+            }
+
+            .navbar{
+                grid-template-columns: auto auto auto;
+                align-items: center;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <nav class="navbar">
+        <img src="Platzi Yard Sale/icons/icon_menu.svg" alt="menu" class="icono-menu">
+
+        <div class="navbar-left">
+            <img src="Platzi Yard Sale/image/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <ul class="menu">
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Furnitures</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <div class="email">
+                <li>felipegallom1011@gmail.com</li>
+                <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+            </div>
+
+            <li class="navbar-shopping-cart">
+                <img src="Platzi Yard Sale/icons/icon_shopping_cart_notification.svg" alt="cart" class="cart">
+                <!-- <div class="punto"></div> -->
+            </li>
+        </div>
+    </nav>
+</body>
+</html>

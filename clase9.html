@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Platzi Yard Sale/image/favicon_bota_fora.svg" type="img">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #919191;
+            --text-input-field: #eeeeee;
+            --hospital-green: #94cf9c;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .my-order{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .title{
+            font-size: var(--lg);
+        }
+
+        .my-order-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            gap: 20px;
+        }
+
+        .my-order-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: rgb(234, 234, 234);
+            border-radius: 8px;
+            padding: 16px 20px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .my-order-content p{
+            margin: 0px;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .my-order-content p:nth-child(2){
+            color: var(--very-light-pink);
+            font-weight: normal;
+            font-size: var(--sm);
+        }
+
+        .my-order-content .price p{
+            text-align: end;
+        }
+
+        .shopping-card{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 10px;
+        }
+
+        .shopping-card figure{
+            margin: 0px;
+        }
+
+        .shopping-card figure img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .shopping-card p{
+            margin: 0px;
+        }
+
+        .shopping-card p:nth-child(1){
+            margin-top: 5px;
+            color: var(--black);
+            font-size: var(--sm);
+            margin-bottom: 5px;
+        }
+
+        .shopping-card p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+
+        .shopping-card p:nth-child(3){
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+             <h1 class="title">My order</h1>
+
+            <div class="my-order-content">
+                <div>
+                    <p>04 06 2022</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="price">
+                    <p>$560.00</p>
+                </div>
+            </div>
+
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://i.pinimg.com/564x/73/a9/b9/73a9b9ad0723dc7963ff800569bcfe8d.jpg" alt="Product" class="product-image">
+                </figure>
+                <div class="product">
+                    <p>Mechinal Keyboard</p>
+                    <p>PBT Keycaps</p>
+                </div>
+                <p>$120.00</p>
+            </div>
+
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://i.pinimg.com/564x/73/a9/b9/73a9b9ad0723dc7963ff800569bcfe8d.jpg" alt="Product" class="product-image">
+                </figure>
+                <div class="product">
+                    <p>Mechinal Keyboard</p>
+                    <p>PBT Keycaps</p>
+                </div>
+                <p>$120.00</p>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

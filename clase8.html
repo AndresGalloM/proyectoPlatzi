@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Platzi Yard Sale/image/favicon_bota_fora.svg" type="img">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #919191;
+            --text-input-field: #eeeeee;
+            --hospital-green: #94cf9c;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 25px;
+            height: 100vh;
+        }
+
+        .mobile-menu ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .mobile-menu ul li{
+            margin-bottom: 22px;
+        }
+
+        .mobile-menu ul li:last-child{
+            margin-bottom: 0px;
+        }
+
+        .mobile-menu ul li a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .separator{
+            width: 100%;
+            height: 1px;
+            background: rgb(215, 215, 215);
+            margin: 35px 0px;
+        }
+
+        .mobile-menu ul:nth-child(2){
+            margin-bottom: 10px;
+        }
+
+        .mobile-menu ul:nth-child(2)  li,
+        .mobile-menu ul:nth-child(2)  li a{
+            margin: 0px;
+            font-weight: 500;
+            font-size: var(--sm);
+            color: var(--very-light-pink);            
+        }
+
+        .mobile-menu ul:nth-child(2)  li .sign-out{
+            display: inline-block;
+            color: var(--hospital-green) ;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <div class="options">
+            <ul>
+                <li><a href="">CATEGORIES</a></li>
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Furnitures</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+
+            <div class="separator"></div>
+            
+            <ul>
+                <li><a href="">My orders</a></li>
+                <li><a href="">My account</a></li>
+            </ul>    
+        </div>
+        
+        <ul>
+            <li><a href="" class="email">felipegallom1011@gmail.com</a></li>
+            <li><a href="" class="sign-out">Sign out</a></li>
+        </ul>
+    </div>
+</body>
+</html>

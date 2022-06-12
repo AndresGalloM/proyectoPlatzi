@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Platzi Yard Sale/image/favicon_bota_fora.svg" type="img">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #919191;
+            --text-input-field: #eeeeee;
+            --hospital-green: #94cf9c;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main-container{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 200px);
+            gap: 26px;
+            place-content: center;
+            margin: 20px 0px;
+        }
+
+        .product-card{
+            width: 100%;
+        }
+
+        .product-card .product-image{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .info-content{
+            display: flex;
+            flex-flow: row; 
+            justify-content: space-between;
+            align-items: center;
+            margin: 13px 5px 5px 5px;
+        }
+
+        .info-content figure{
+            margin: 0px;
+        }
+
+        .info-content figure img{
+            width: 35px;
+        }
+
+        .price{
+            font-size: var(--md);
+            color: var(--black);
+            margin: 0px;
+            font-weight: 900;
+        }
+
+        .object{
+            font-size: var(--sm);
+            color: var(--dark);
+            font-weight: 400;
+            margin: 0px;
+        }
+
+        @media (max-width: 700px) {
+            .cards-container{
+                grid-template-columns: repeat(auto-fill, 120px);
+            }
+
+            .product-card .product-image{
+                height: 120px;
+            }
+
+            .info-content figure img{
+                width: 25px;
+            }
+
+            .price{
+                font-size: var(--sm);
+            }
+
+            .object{
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/73/a9/b9/73a9b9ad0723dc7963ff800569bcfe8d.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/70/5f/84/705f842a6d66f0bad042ea7e7230f68c.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/a6/a1/c0/a6a1c0bf174e24b2698460fefe078f80.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/b2/7a/a1/b27aa1c17db87da9104732ba6329c865.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/ae/c1/cd/aec1cd8a7f5839acb038b8ef61fa85e8.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/63/12/6f/63126fb4dfe3d46b95895ff3e639264c.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/5c/55/be/5c55be93643064002fc844533128cb23.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/ee/3c/17/ee3c176674649575fe51d38dd27d75d0.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/eb/72/91/eb72911670567857c53d51eb98d21287.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/65/56/54/6556547574143be7b3abf24f6c5be26f.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/3e/81/ed/3e81edc49291bb49b7332ff0e13db932.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/86/c1/7c/86c17c5f4fef243c3e4fa4a6c346a333.jpg" alt="Product" class="product-image">
+                <div class="info-content">
+                    <div>
+                        <p class="price">$120.00</p>
+                        <p class="object">Key board</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="Platzi Yard Sale/icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
