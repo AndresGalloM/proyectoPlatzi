@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Platzi Yard Sale/image/favicon_bota_fora.svg" type="img">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ce7cd523c1.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #919191;
+            --text-input-field: #eeeeee;
+            --hospital-green: #94cf9c;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        p{
+            margin: 0px;
+        }
+
+        .my-card{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 350px;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .my-card-products{
+            display: grid;
+            gap: 20px;
+        }
+
+        .products{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .products div:nth-child(2){
+            align-self: flex-start;
+            padding: 5px 0px;
+        }
+
+        .products .arrow{
+            width: 10px;
+            height: 10px;
+        }
+
+        .products img{
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .products .product-info{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+
+        .products .product-info p:nth-child(1){
+            color: var(--black);
+        }
+
+        .products p:nth-child(3){
+            font-weight: 700;
+            font-size: var(--sm);
+        }
+
+        .primary-button{
+            background: var(--hospital-green);
+            border: none;
+            outline: none;
+            padding: 15px;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: var(--md);
+            font-weight: bold;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        .value-order{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgb(223, 223, 223);
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .value-order p:nth-child(2){
+            font-size: var(--sm);
+            font-weight: normal;
+        }
+
+        @media (max-width: 450px) {
+            .my-card{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="my-card">
+        <div class="my-card-products">
+            <div class="products">
+                <img src="https://i.pinimg.com/564x/70/5f/84/705f842a6d66f0bad042ea7e7230f68c.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="https://i.pinimg.com/564x/a6/a1/c0/a6a1c0bf174e24b2698460fefe078f80.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="https://i.pinimg.com/736x/b2/7a/a1/b27aa1c17db87da9104732ba6329c865.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="https://i.pinimg.com/564x/70/5f/84/705f842a6d66f0bad042ea7e7230f68c.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="https://i.pinimg.com/564x/a6/a1/c0/a6a1c0bf174e24b2698460fefe078f80.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="https://i.pinimg.com/736x/b2/7a/a1/b27aa1c17db87da9104732ba6329c865.jpg" alt="product" class="product-image">
+                <div class="product-info">
+                    <p>Keyboard Mechanical</p>
+                    <p>PBT keycaps</p>
+                </div>
+                <p>$120.00</p>
+                <div>
+                    <img src="Platzi Yard Sale/icons/flechita.svg" alt="flecha" class="arrow">
+                </div>
+            </div>
+        </div>
+    
+        <div class="value-order">
+            <div>
+                <p>Total</p>
+                <p>8 articles</p>
+            </div>
+            <div>
+                <p>$630.00</p>
+            </div>
+        </div>
+
+        <button class="primary-button checkout">Checkout</button>
+    </aside>
+</body>
+</html>
